@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3437966676.js" crossorigin="anonymous"></script>
+    <title>Cadastre novo endereço</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form">
+            <h2>Novo Endereço</h2>
+            <div class="form-items">
+                <div class="row">
+                    <div class="item">
+                        <label for="cep">CEP</label>
+                        <input type="number" name="cep" placeholder="Digite o CEP" onblur="buscaCep()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco">
+                    </div>
+                    <div class="item">    
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="item">   
+                        <label for="numero">Número</label>
+                        <input type="number" name="numero">
+                    </div>
+                    <div class="item">
+                        <label for="complemento">Complemento</label>
+                        <input type="number" name="complemento">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade">
+                    </div>
+                    <div class="item">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="estado">
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="buttons">
+                <input type="reset" value="Apagar">
+                <button>Enviar</button>
+            </div>
+        </form>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
